@@ -579,7 +579,7 @@ def email_notification(project_id, build, email):
         return
     project = Project.objects.get(id=project_id)
     build_obj = Build.objects.get(id=build['id'])
-    subject = ('(ReadTheDocs) Building docs for %s failed' % project.name)
+    subject = (_('(ReadTheDocs) Building docs for %s failed') % project.name)
     template = 'projects/notification_email.txt'
     context = {
         'project': project.name,
