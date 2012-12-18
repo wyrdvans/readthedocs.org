@@ -25,7 +25,7 @@ from readthedocs.builds.models import Build, Version
 from readthedocs.projects.models import Project, ImportedFile
 from readthedocs.projects.utils import highest_version, mkversion
 from readthedocs.projects import tasks
-from djangome import views as djangome
+from readthedocs.djangome import views as djangome
 
 log = logging.getLogger(__name__)
 
