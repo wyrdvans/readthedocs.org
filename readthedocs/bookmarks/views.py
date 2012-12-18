@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.views.generic.list_detail import object_list
 
-from bookmarks.models import Bookmark
+from readthedocs.bookmarks.models import Bookmark
 
 def bookmark_list(request, queryset=Bookmark.objects.all()):
     return object_list(
