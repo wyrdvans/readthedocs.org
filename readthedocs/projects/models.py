@@ -11,10 +11,10 @@ from django.utils.translation import ugettext_lazy as _
 
 from guardian.shortcuts import assign, get_objects_for_user, get_perms
 
-from projects import constants
-from projects.exceptions import ProjectImportError
-from projects.templatetags.projects_tags import sort_version_aware
-from projects.utils import highest_version as _highest, make_api_version, make_api_project
+from readthedocs.projects import constants
+from readthedocs.projects.exceptions import ProjectImportError
+from readthedocs.projects.templatetags.projects_tags import sort_version_aware
+from readthedocs.projects.utils import highest_version as _highest, make_api_version, make_api_project
 from taggit.managers import TaggableManager
 from tastyapi.slum import api
 
@@ -161,7 +161,7 @@ class Project(models.Model):
             #previous_obj = self.__class__.objects.get(pk=self.pk)
             #if previous_obj.repo != self.repo:
                 #Needed to not have an import loop on Project
-                #from projects import tasks
+                #from readthedocs.projects import tasks
                 #This needs to run on the build machine.
                 #tasks.remove_dir.delay(os.path.join(self.doc_path, 'checkouts'))
         if not self.slug:
@@ -497,7 +497,7 @@ class Project(models.Model):
        """
        if self.default_branch:
            return self.default_branch
-       else: 
+       else:
            return self.vcs_repo().fallback_branch
 
     def add_subproject(self, child):

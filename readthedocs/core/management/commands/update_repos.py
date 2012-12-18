@@ -2,8 +2,8 @@ import logging
 
 from django.core.management.base import BaseCommand
 from optparse import make_option
-from projects import tasks
-from projects.models import Project
+from readthedocs.projects import tasks
+from readthedocs.projects.models import Project
 from builds.models import Version
 
 log = logging.getLogger(__name__)
@@ -82,8 +82,7 @@ class Command(BaseCommand):
                 tasks.update_docs_pull(pdf=make_pdf,
                                        record=record,
                                        force=force)
- 
+
     @property
     def help(self):
         return Command.__doc__
- 

@@ -9,8 +9,8 @@ from api.base import ProjectResource, UserResource, BuildResource, VersionResour
 from builds.filters import VersionFilter
 from core.forms import UserProfileForm
 from core.views import SearchView
-from projects.feeds import LatestProjectsFeed, NewProjectsFeed
-from projects.filters import ProjectFilter
+from readthedocs.projects.feeds import LatestProjectsFeed, NewProjectsFeed
+from readthedocs.projects.filters import ProjectFilter
 
 v1_api = Api(api_name='v1')
 v1_api.register(BuildResource())

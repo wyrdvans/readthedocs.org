@@ -175,7 +175,7 @@ def make_api_version(version_data):
     return ver
 
 def make_api_project(project_data):
-    from projects.models import Project
+    from readthedocs.projects.models import Project
     for key in ['users', 'resource_uri', 'absolute_url', 'downloads']:
         if project_data.has_key(key):
             del project_data[key]

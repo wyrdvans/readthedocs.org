@@ -2,7 +2,7 @@ import shutil
 
 from django.contrib.admin.models import User
 
-from projects.models import Project
+from readthedocs.projects.models import Project
 
 from rtd_tests.utils import make_test_git
 from rtd_tests.tests.base import RTDTestCase

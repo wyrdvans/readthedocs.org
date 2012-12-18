@@ -4,7 +4,7 @@ and related models.
 
 from builds.models import Version
 from django.contrib import admin
-from projects.models import Project, ImportedFile, ProjectRelationship
+from readthedocs.projects.models import Project, ImportedFile, ProjectRelationship
 from guardian.admin import GuardedModelAdmin
 
 class ProjectRelationshipInline(admin.TabularInline):

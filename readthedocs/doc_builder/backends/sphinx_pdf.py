@@ -5,7 +5,7 @@ import logging
 from django.conf import settings
 
 from doc_builder.base import BaseBuilder, restoring_chdir
-from projects.utils import run
+from readthedocs.projects.utils import run
 from core.utils import copy_file_to_app_servers
 
 

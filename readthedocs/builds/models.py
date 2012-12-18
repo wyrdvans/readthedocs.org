@@ -3,8 +3,8 @@ from django.utils.translation import ugettext_lazy as _, ugettext
 
 from guardian.shortcuts import assign, get_objects_for_user
 
-from projects.models import Project
-from projects import constants
+from readthedocs.projects.models import Project
+from readthedocs.projects import constants
 from .constants import BUILD_STATE, BUILD_TYPES
 
 

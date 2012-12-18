@@ -14,8 +14,8 @@ from guardian.shortcuts import get_objects_for_user
 from taggit.models import Tag
 
 from core.views import serve_docs
-from projects.models import Project
-from projects.utils import highest_version
+from readthedocs.projects.models import Project
+from readthedocs.projects.utils import highest_version
 
 
 def project_index(request, username=None, tag=None):
@@ -138,4 +138,3 @@ def search_autocomplete(request):
     json_response = simplejson.dumps(list(project_names))
 
     return HttpResponse(json_response, mimetype='text/javascript')
-

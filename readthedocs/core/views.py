@@ -18,9 +18,9 @@ from guardian.shortcuts import get_objects_for_user
 
 from builds.models import Build
 from core.forms import FacetedSearchForm
-from projects.models import Project, ImportedFile, ProjectRelationship
-from projects.tasks import update_docs, remove_dir
-from projects.utils import highest_version
+from readthedocs.projects.models import Project, ImportedFile, ProjectRelationship
+from readthedocs.projects.tasks import update_docs, remove_dir
+from readthedocs.projects.utils import highest_version
 from builds.models import Version
 
 import json

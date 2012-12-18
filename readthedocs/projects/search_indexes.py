@@ -11,8 +11,8 @@ from haystack import indexes
 from haystack.fields import CharField
 from celery_haystack import indexes as celery_indexes
 
-from projects import constants
-from projects.models import ImportedFile, Project
+from readthedocs.projects import constants
+from readthedocs.projects.models import ImportedFile, Project
 
 import logging
 log = logging.getLogger(__name__)

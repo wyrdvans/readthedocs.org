@@ -1,7 +1,7 @@
 import csv
 from StringIO import StringIO
 
-from projects.exceptions import ProjectImportError
+from readthedocs.projects.exceptions import ProjectImportError
 from vcs_support.base import BaseVCS, VCSVersion
 
 

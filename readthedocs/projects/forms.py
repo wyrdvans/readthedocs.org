@@ -5,9 +5,9 @@ from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
 from django.utils.safestring import mark_safe
 
-from projects import constants
-from projects.models import Project
-from projects.tasks import update_docs
+from readthedocs.projects import constants
+from readthedocs.projects.models import Project
+from readthedocs.projects.tasks import update_docs
 
 
 class ProjectForm(forms.ModelForm):

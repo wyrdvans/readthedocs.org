@@ -1,7 +1,7 @@
 from django import forms
 
 from builds.models import VersionAlias
-from projects.models import Project
+from readthedocs.projects.models import Project
 
 
 class AliasForm(forms.ModelForm):

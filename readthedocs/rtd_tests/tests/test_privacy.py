@@ -4,8 +4,8 @@ import json
 from django.test import TestCase
 
 from builds.models import Version
-from projects.models import Project
-from projects import tasks
+from readthedocs.projects.models import Project
+from readthedocs.projects import tasks
 
 log = logging.getLogger(__name__)
 

@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _, ugettext
 
-from projects.models import Project
+from readthedocs.projects.models import Project
 
 class Bookmark(models.Model):
     project = models.ForeignKey(Project, verbose_name=_('Project'), related_name='bookmarks', null=True)

@@ -15,11 +15,11 @@ from guardian.shortcuts import assign
 from builds.forms import AliasForm
 from builds.filters import VersionFilter
 from builds.models import Version
-from projects.forms import (ImportProjectForm, build_versions_form,
+from readthedocs.projects.forms import (ImportProjectForm, build_versions_form,
                             build_upload_html_form, SubprojectForm)
-from projects.models import Project
-from projects.tasks import unzip_files
-from projects import constants
+from readthedocs.projects.models import Project
+from readthedocs.projects.tasks import unzip_files
+from readthedocs.projects import constants
 
 
 @login_required

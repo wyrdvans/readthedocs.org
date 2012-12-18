@@ -8,7 +8,7 @@ from taggit.models import Tag
 
 from builds.models import Build
 from builds.filters import BuildFilter
-from projects.models import Project
+from readthedocs.projects.models import Project
 
 def build_list(request, project_slug=None, tag=None):
     """Show a list of builds.
