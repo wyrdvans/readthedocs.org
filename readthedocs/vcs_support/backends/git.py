@@ -6,8 +6,8 @@ from StringIO import StringIO
 from shutil import rmtree
 
 from readthedocs.projects.exceptions import ProjectImportError
-from vcs_support.backends.github import GithubContributionBackend
-from vcs_support.base import BaseVCS, VCSVersion
+from readthedocs.vcs_support.backends.github import GithubContributionBackend
+from readthedocs.vcs_support.base import BaseVCS, VCSVersion
 
 log = logging.getLogger(__name__)
 

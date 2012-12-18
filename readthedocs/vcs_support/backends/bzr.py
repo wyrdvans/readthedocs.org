@@ -2,7 +2,7 @@ import csv
 from StringIO import StringIO
 
 from readthedocs.projects.exceptions import ProjectImportError
-from vcs_support.base import BaseVCS, VCSVersion
+from readthedocs.vcs_support.base import BaseVCS, VCSVersion
 
 
 class Backend(BaseVCS):
