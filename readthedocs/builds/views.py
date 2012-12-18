@@ -6,8 +6,8 @@ from django.views.generic.list_detail import object_list, object_detail
 from guardian.decorators import permission_required_or_403
 from taggit.models import Tag
 
-from builds.models import Build
-from builds.filters import BuildFilter
+from readthedocs.builds.models import Build
+from readthedocs.builds.filters import BuildFilter
 from readthedocs.projects.models import Project
 
 def build_list(request, project_slug=None, tag=None):

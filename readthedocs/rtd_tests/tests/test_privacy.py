@@ -3,7 +3,7 @@ import json
 
 from django.test import TestCase
 
-from builds.models import Version
+from readthedocs.builds.models import Version
 from readthedocs.projects.models import Project
 from readthedocs.projects import tasks
 

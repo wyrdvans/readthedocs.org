@@ -2,7 +2,7 @@
 """
 
 from django.contrib import admin
-from builds.models import Build, VersionAlias, Version
+from readthedocs.builds.models import Build, VersionAlias, Version
 from guardian.admin import GuardedModelAdmin
 
 class BuildAdmin(admin.ModelAdmin):

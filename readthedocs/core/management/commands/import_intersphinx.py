@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from builds.models import Version
+from readthedocs.builds.models import Version
 from readthedocs.projects.tasks import update_intersphinx
 
 

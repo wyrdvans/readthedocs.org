@@ -166,7 +166,7 @@ class DictObj(object):
 
 
 def make_api_version(version_data):
-    from builds.models import Version
+    from readthedocs.builds.models import Version
     del version_data['resource_uri']
     project_data = version_data['project']
     project = make_api_project(project_data)

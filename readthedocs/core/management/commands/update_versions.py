@@ -1,4 +1,4 @@
-from builds.models import Version
+from readthedocs.builds.models import Version
 from django.core.management.base import BaseCommand
 from optparse import make_option
 from readthedocs.projects.tasks import update_docs

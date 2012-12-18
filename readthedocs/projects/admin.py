@@ -2,7 +2,7 @@
 and related models.
 """
 
-from builds.models import Version
+from readthedocs.builds.models import Version
 from django.contrib import admin
 from readthedocs.projects.models import Project, ImportedFile, ProjectRelationship
 from guardian.admin import GuardedModelAdmin

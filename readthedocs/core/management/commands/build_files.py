@@ -6,7 +6,7 @@ from django.conf import settings
 
 from readthedocs.projects import tasks
 from readthedocs.projects.models import ImportedFile
-from builds.models import Version
+from readthedocs.builds.models import Version
 
 log = logging.getLogger(__name__)
 

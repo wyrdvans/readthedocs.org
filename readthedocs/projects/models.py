@@ -446,7 +446,7 @@ class Project(models.Model):
             return None
 
     def api_versions(self):
-        from builds.models import Version
+        from readthedocs.builds.models import Version
         ret = []
         for version_data in api.version.get(project=self.pk, active=True)['objects']:
             version = make_api_version(version_data)

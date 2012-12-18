@@ -4,7 +4,7 @@ from django.core.management.base import BaseCommand
 from optparse import make_option
 from readthedocs.projects import tasks
 from readthedocs.projects.models import Project
-from builds.models import Version
+from readthedocs.builds.models import Version
 
 log = logging.getLogger(__name__)
 

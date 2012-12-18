@@ -1,6 +1,6 @@
 from django import forms
 
-from builds.models import VersionAlias
+from readthedocs.builds.models import VersionAlias
 from readthedocs.projects.models import Project
 
 

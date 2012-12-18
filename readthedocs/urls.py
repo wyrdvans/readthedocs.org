@@ -6,7 +6,7 @@ from django.views.generic.simple import direct_to_template
 from tastypie.api import Api
 
 from readthedocs.api.base import ProjectResource, UserResource, BuildResource, VersionResource, FileResource
-from builds.filters import VersionFilter
+from readthedocs.builds.filters import VersionFilter
 from core.forms import UserProfileForm
 from core.views import SearchView
 from readthedocs.projects.feeds import LatestProjectsFeed, NewProjectsFeed

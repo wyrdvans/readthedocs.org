@@ -12,9 +12,9 @@ from django.views.generic.list_detail import object_list
 
 from guardian.shortcuts import assign
 
-from builds.forms import AliasForm
-from builds.filters import VersionFilter
-from builds.models import Version
+from readthedocs.builds.forms import AliasForm
+from readthedocs.builds.filters import VersionFilter
+from readthedocs.builds.models import Version
 from readthedocs.projects.forms import (ImportProjectForm, build_versions_form,
                             build_upload_html_form, SubprojectForm)
 from readthedocs.projects.models import Project

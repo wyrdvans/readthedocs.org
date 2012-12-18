@@ -2,7 +2,7 @@ import logging
 
 from django.core.management.base import BaseCommand
 from optparse import make_option
-from builds.models import Version
+from readthedocs.builds.models import Version
 from core.utils import copy_to_app_servers
 
 log = logging.getLogger(__name__)
