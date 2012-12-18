@@ -4,8 +4,8 @@ from django.contrib.admin.models import User
 
 from readthedocs.projects.models import Project
 
-from rtd_tests.utils import make_test_git
-from rtd_tests.tests.base import RTDTestCase
+from readthedocs.rtd_tests.utils import make_test_git
+from readthedocs.rtd_tests.tests.base import RTDTestCase
 
 
 class TestBuilding(RTDTestCase):
