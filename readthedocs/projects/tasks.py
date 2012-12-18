@@ -31,8 +31,8 @@ from readthedocs.projects.utils import (
     make_api_version,
     make_api_project,
     )
-from tastyapi import client as tastyapi_client
-from tastyapi import api
+from readthedocs.tastyapi import client as tastyapi_client
+from readthedocs.tastyapi import api
 from readthedocs.core.utils import copy_to_app_servers, run_on_app_servers
 
 ghetto_hack = re.compile(

@@ -16,11 +16,11 @@ from readthedocs.projects.exceptions import ProjectImportError
 from readthedocs.projects.templatetags.projects_tags import sort_version_aware
 from readthedocs.projects.utils import highest_version as _highest, make_api_version, make_api_project
 from taggit.managers import TaggableManager
-from tastyapi.slum import api
+from readthedocs.tastyapi.slum import api
 
-from vcs_support.base import VCSProject
-from vcs_support.backends import backend_cls
-from vcs_support.utils import Lock
+from readthedocs.vcs_support.base import VCSProject
+from readthedocs.vcs_support.backends import backend_cls
+from readthedocs.vcs_support.utils import Lock
 
 
 log = logging.getLogger(__name__)
