@@ -19,8 +19,8 @@ import slumber
 
 
 from readthedocs.builds.models import Version
-from doc_builder import loading as builder_loading
-from doc_builder.base import restoring_chdir
+from readthedocs.doc_builder import loading as builder_loading
+from readthedocs.doc_builder.base import restoring_chdir
 from readthedocs.projects.exceptions import ProjectImportError
 from readthedocs.projects.models import ImportedFile, Project
 from readthedocs.projects.utils import (

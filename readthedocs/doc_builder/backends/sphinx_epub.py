@@ -1,7 +1,7 @@
 from glob import glob
 import os
-from doc_builder.base import restoring_chdir
-from doc_builder.backends.sphinx import Builder as HtmlBuilder
+from readthedocs.doc_builder.base import restoring_chdir
+from readthedocs.doc_builder.backends.sphinx import Builder as HtmlBuilder
 from readthedocs.projects.utils import run
 from readthedocs.core.utils import copy_file_to_app_servers
 

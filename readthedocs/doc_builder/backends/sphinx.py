@@ -10,7 +10,7 @@ from django.contrib.auth.models import SiteProfileNotAvailable
 from django.core.exceptions import ObjectDoesNotExist
 from django.conf import settings
 
-from doc_builder.base import BaseBuilder, restoring_chdir
+from readthedocs.doc_builder.base import BaseBuilder, restoring_chdir
 from readthedocs.projects.utils import run
 from readthedocs.core.utils import copy_to_app_servers, copy_file_to_app_servers
 
