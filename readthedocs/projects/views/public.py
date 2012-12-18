@@ -13,7 +13,7 @@ from guardian.decorators import permission_required_or_403
 from guardian.shortcuts import get_objects_for_user
 from taggit.models import Tag
 
-from core.views import serve_docs
+from readthedocs.core.views import serve_docs
 from readthedocs.projects.models import Project
 from readthedocs.projects.utils import highest_version
 

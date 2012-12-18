@@ -17,7 +17,7 @@ from haystack.query import EmptySearchQuerySet
 from guardian.shortcuts import get_objects_for_user
 
 from readthedocs.builds.models import Build
-from core.forms import FacetedSearchForm
+from readthedocs.core.forms import FacetedSearchForm
 from readthedocs.projects.models import Project, ImportedFile, ProjectRelationship
 from readthedocs.projects.tasks import update_docs, remove_dir
 from readthedocs.projects.utils import highest_version

@@ -20,7 +20,7 @@ from tastypie.utils.mime import build_content_type
 from tastypie.http import HttpCreated
 from tastypie.utils import dict_strip_unicode_keys, trailing_slash
 
-from core.forms import FacetedSearchForm
+from readthedocs.core.forms import FacetedSearchForm
 from readthedocs.builds.models import Build, Version
 from readthedocs.projects.models import Project, ImportedFile
 from readthedocs.projects.utils import highest_version, mkversion

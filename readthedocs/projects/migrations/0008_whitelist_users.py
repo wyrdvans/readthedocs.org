@@ -4,7 +4,7 @@ from south.db import db
 from south.v2 import DataMigration
 from django.db import models
 from readthedocs.projects.models import Project
-from core.models import UserProfile
+from readthedocs.core.models import UserProfile
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
 

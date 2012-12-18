@@ -33,7 +33,7 @@ from readthedocs.projects.utils import (
     )
 from tastyapi import client as tastyapi_client
 from tastyapi import api
-from core.utils import copy_to_app_servers, run_on_app_servers
+from readthedocs.core.utils import copy_to_app_servers, run_on_app_servers
 
 ghetto_hack = re.compile(
     r'(?P<key>.*)\s*=\s*u?\[?[\'\"](?P<value>.*)[\'\"]\]?')

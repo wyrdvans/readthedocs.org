@@ -7,8 +7,8 @@ from tastypie.api import Api
 
 from readthedocs.api.base import ProjectResource, UserResource, BuildResource, VersionResource, FileResource
 from readthedocs.builds.filters import VersionFilter
-from core.forms import UserProfileForm
-from core.views import SearchView
+from readthedocs.core.forms import UserProfileForm
+from readthedocs.core.views import SearchView
 from readthedocs.projects.feeds import LatestProjectsFeed, NewProjectsFeed
 from readthedocs.projects.filters import ProjectFilter
 
